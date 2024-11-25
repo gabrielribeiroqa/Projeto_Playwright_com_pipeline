@@ -44,12 +44,14 @@ exports.TestePage = class TestePage {
     async preencherCampoNome() {
         const nome = faker.gerarNome();
         await expect(this.campoNome).toBeVisible();
+        await expect(this.campoNome).toBeEmpty()
         await this.campoNome.fill(nome);
     }
 
     async preencherCampoSobreNome() {
         const sobrenome = faker.gerarSobrenome();
         await expect(this.campoSobreNome).toBeVisible();
+        await expect(this.campoSobreNome).toBeEmpty()
         await this.campoSobreNome.fill(sobrenome);
     }
 
@@ -58,12 +60,14 @@ exports.TestePage = class TestePage {
         const sobrenome = faker.gerarSobrenome();
         const email = faker.gerarEmail(nome, sobrenome);
         await expect(this.campoEmail).toBeVisible();
+        await expect(this.campoEmail).toBeEmpty()
         await this.campoEmail.fill(email);
     }
 
     async preencherCampoDescricao() {
         const descricao = faker.gerarTextoLoremIpsum();
         await expect(this.campoDescricao).toBeVisible();
+        await expect(this.campoDescricao).toBeEmpty()
         await this.campoDescricao.fill(descricao);
     }
 
@@ -104,12 +108,14 @@ exports.TestePage = class TestePage {
     //botão confirmar teste
     async clicarBotaoConfirmarTeste() {
         await expect(this.btnConfirmarTeste).toBeVisible();
+        await expect(this.btnConfirmarTeste).toBeEnabled()
         await this.btnConfirmarTeste.click();
     }
 
     //botão resetar
     async clicarBotaoResetar() {
         await expect(this.btnResetar).toBeVisible();
+        await expect(this.btnResetar).toBeEnabled()
         await this.btnResetar.click();
     }
 

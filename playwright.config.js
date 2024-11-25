@@ -13,6 +13,7 @@ export default defineConfig({
     baseURL: process.env.BASE_URL,
     screenshot: 'on',
     trace: 'on-first-retry',
+    video: 'on'
   },
 
   timeout: 60000,

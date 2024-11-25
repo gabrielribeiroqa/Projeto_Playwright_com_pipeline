@@ -1,5 +1,4 @@
-# quando fizer o clone, precisa inserir o comando npm install no terminal, para baixar o node modules, além disso, precisa ter também o Node.js e o npm, e baixar o playwright com o seguinte comando: 
-npm init playwright@latest 
-# para executar o projeto em Headless é só usar o comando: npx playwright test
-# para executar o projeto em modo interativo é só usar o comando: npx playwright test --ui ou npx playwright test --headed
+# Após o clone, execute npm install no terminal para baixar o node_modules. Certifique-se de já ter o Node.js e o npm, e instale o Playwright com: npm init playwright@latest </br>
+# Para executar o projeto em Headless, é só usar o comando: npx playwright test
+# Para executar o projeto em modo interativo, é só usar o comando: npx playwright test --ui ou npx playwright test --headed
  

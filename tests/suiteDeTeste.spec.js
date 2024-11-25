@@ -21,6 +21,7 @@ test.describe('Automação de Teste com Playwright', () => {
         await testePage.clicarBotaoConfirmarTeste()
 
         await test.step('Então o formulário não pode ser enviado e tem que aparecer as mensagens obrigatórias', async () => { });
+        
         await testePage.validarMensagemErroNome()
         await testePage.validarMensagemErroSobreNome()
         await testePage.validarMensagemErroEmail()
@@ -114,6 +115,7 @@ test.describe('Automação de Teste com Playwright', () => {
         await test.step('Dado que eu esteja no site do QAutomatizado', async () => { });
 
         await test.step('Quando clicar no botão confirmar teste', async () => { });
+        
         await testePage.preencherCampoNome();
         await testePage.preencherCampoSobreNome();
         await testePage.preencherCampoEmail();
